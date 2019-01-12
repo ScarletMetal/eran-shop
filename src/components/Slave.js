@@ -1,12 +1,13 @@
 import React from 'react'
 import propTypes from 'prop-types'
+import { Image, Label } from 'semantic-ui-react'
 
 const Slave = props => {
   return (
     <div>
-      <img src={props.image} />
-      {props.name}<br />
-      {props.price}
+      <Image src={props.image} width="320px" />
+      <Label>name: {props.name}</Label>
+      <Label>price: {props.price}$</Label>
     </div>
   )
 }
